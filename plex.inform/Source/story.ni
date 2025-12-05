@@ -7,7 +7,7 @@ Story released under MIT License
 
 [Bibliographic Information]
 The story genre is "Adventure".
-The release number is 1.
+The release number is 2.
 The story description is "An interactive fiction inspired by the original Half-Life, where you play as an engineer in an advanced government sponsored research facility."
 The story creation year is 2025.
 
@@ -643,6 +643,7 @@ Check entering the wormhole:
 		say "You should arm yourself before stepping into an alien dimension." instead;
 	if muffin eaten is true:
 		say "As you approach the portal, you feel the muffin inside you begin to rumble. Reality seems to take on a strange, dreamlike quality..." instead;
+		now the player is in Muffin-Alien Dimension;
 	otherwise:
 		continue the action.
 
@@ -766,30 +767,36 @@ Carry out using failsafe:
 
 [Muffin Ending]
 
-Alien Dimension - Muffin Ending is a room.
-The description is "As you step through the portal, you feel the muffin inside you activate. Reality becomes... silly.[paragraph break]
-You find yourself floating in a void of swirling pastry crumbs and butterscotch. The alien entities approach, but they pause, confused. Their voices crackle through your mind:[paragraph break]
-'WHAT... IS THIS SUBSTANCE?'
+Muffin-Alien Dimension is a room.
 
-'IT DEFIES QUANTUM ANALYSIS.'
+Muffin Combat is a scene.
+Muffin Combat begins when the player is in Muffin-Alien Dimension.
+Muffin Combat ends when muffinized is true.
 
-'IT TASTES LIKE... CHOCOLATE CHIP?'"
+The muffinized is a truth state that varies. The muffinized is false.
 
-When play begins:
-	if the player is in Alien Dimension - Muffin Ending:
-		wait for any key;
-		say "You begin to laugh. Not a nervous laugh, but genuine, uncontrollable laughter. As you laugh, the muffin's power spreads through your body.";
-		wait for any key;
-		say "Your form begins to expand and shift. You are no longer human. You are becoming... a muffin. A giant, terrifying, delicious muffin.";
-		wait for any key;
-		say "'NO,' the alien entity cries. 'THIS IS NOT POSSIBLE. WE CANNOT PARSE THIS. WE CANNOT—'";
-		wait for any key;
-		say "You eat them. All of them. The aliens, the dimension, the void itself.";
-		wait for any key;
-		say "[paragraph break]When you wake up, you're back in the Experimental Lab. The muffin is still on the table, untouched. The plex is still standing. No one remembers the aliens, the portal, or any of it.";
-		wait for any key;
-		say "But you remember.";
-		wait for any key;
-		say "And the muffin is still watching you.";
-		say "[paragraph break]GAME WON? - MUFFIN ENDING";
-		end the story.
+When Muffin Combat begins:
+	say "As you step through the portal, you feel the muffin inside you activate. Reality becomes... silly.[paragraph break]
+	You find yourself floating in a void of swirling pastry crumbs and butterscotch. The alien entities approach, but they pause, confused. Their voices crackle through your mind:[paragraph break]
+	'WHAT... IS THIS SUBSTANCE?'
+
+	'IT DEFIES QUANTUM ANALYSIS.'
+
+	'IT TASTES LIKE... CHOCOLATE CHIP?'";
+	wait for any key;
+	say "[line break]You begin to laugh. Not a nervous laugh, but genuine, uncontrollable laughter. As you laugh, the muffin's power spreads through your body.";
+	wait for any key;
+	say "[line break]Your form begins to expand and shift. You are no longer human. You are becoming... a muffin. A giant, terrifying, delicious muffin.";
+	wait for any key;
+	say "[line break]'NO,' the alien entity cries. 'THIS IS NOT POSSIBLE. WE CANNOT PARSE THIS. WE CANNOT—'";
+	wait for any key;
+	say "[line break]You eat them. All of them. The aliens, the dimension, the void itself.";
+	wait for any key;
+	say "[paragraph break]When you wake up, you're back in the Experimental Lab. The muffin is still on the table, untouched. The plex is still standing. No one remembers the aliens, the portal, or any of it.[line break]";
+	wait for any key;
+	say "But you remember.[line break]";
+	wait for any key;
+	say "And the muffin is still watching you.";
+	say "[paragraph break]GAME WON? - MUFFIN ENDING";
+	now muffinized is true;
+	end the story.
