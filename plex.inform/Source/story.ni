@@ -67,9 +67,9 @@ Intro played is a truth state that varies.
 Intro ends when intro played is true.
 
 When Intro begins:
-	say "You awoke in the gray confines of a facility. In your memory, the machine flashed intensely with white light before a deafening explosion knocked you out.  When you turned your head towards the machine, alien creatures was walking out of the bright qubit.
+	say "You awoke in the gray confines of a facility. In your memory, the machine flashed intensely with white light before a deafening explosion knocked you out.  When you turned your head towards the machine, alien creatures were walking out of the bright qubit.
 	
-	The Quantum Plex manager, Mr David Alpin, asked all staff to evacuate over the megaphone. Though you had not grasp the reason for the test's failure, nor the cause of the white light, you knew the truth will manifest as you escape the facility.
+	The Quantum Plex manager, Mr David Alpin, announced the evacuation order over the megaphone. Though you had not grasp the reason for the test's failure, nor the cause of the white light, you knew the truth will manifest as you escape the facility.
 	
 	Press any key to continue[line break]";
 	wait for any key;
@@ -81,7 +81,7 @@ Part - Maximal Confusion
 
 [Experimental Lab]
 
-Experimental Lab is a room. "You stood in the Experimental Lab. Tempered glass protects you from the glowing machine, where otherworldly noises is emanating from, but thick smoke obscures your view. A [table] is placed neatly in front, with a [computer] placed next to it."
+Experimental Lab is a room. "You stood in the Experimental Lab. Tempered glass protects you from the glowing machine, where otherworldly noises are emanating from, but thick smoke obscures your view. A [table] is placed neatly in front, with a [computer] placed next to it."
 
 A table is a scenery in Experimental Lab.
 The description is "A wooden table with items neatly arranged. You don't recall placing any there."
