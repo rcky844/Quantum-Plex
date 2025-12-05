@@ -1,10 +1,23 @@
 "Quantum Plex" by "Ricky Cheung"
+[
+Copyright 2025 Ricky Cheung.
+Story released under MIT License
+]
 
+
+[Bibliographic Information]
+The story genre is "Adventure".
+The release number is 1.
+The story description is "An interactive fiction inspired by the original Half-Life, where you play as an engineer in an advanced government sponsored research facility."
+The story creation year is 2025.
+
+[Configuration]
 Include Exit Lister by Gavin Lambert.
 Include Modified Keyword Interface by Aaron Reed.
 
-Release along with an interpreter.
+Release along with an interpreter, cover art.
 
+[General]
 A thing has some text called printing. The printing of a thing is usually "blank".
 Understand the command "read" as something new. Understand "read [something]" as reading. Reading is an action applying to one thing, requiring light. Check reading: if the printing of the noun is "blank", say "Nothing is written on [the noun]." instead. Carry out reading: say "You read: [printing of the noun][line break]". Report reading: do nothing.
 
