@@ -15,7 +15,7 @@ The story creation year is 2025.
 Include Exit Lister by Gavin Lambert.
 Include Modified Keyword Interface by Aaron Reed.
 
-Release along with an interpreter, cover art.
+Release along with an interpreter, cover art, introductory postcard.
 
 [General]
 A thing has some text called printing. The printing of a thing is usually "blank".
