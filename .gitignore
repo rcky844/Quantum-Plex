@@ -1,0 +1,22 @@
+# Ignore everything
+*
+
+# Except necessary files
+!plex.inform/
+!plex.inform/Source/
+!plex.inform/Source/story.ni
+!plex.materials/
+!plex.materials/Cover.jpg
+!plex.materials/Small Cover.jpg
+!docs/
+!docs/**
+
+# Need to explicitly exclude these
+docs/.DS_Store
+docs/extensions/.DS_Store
+
+!README.md
+!LICENSE
+
+
+!.gitignore
